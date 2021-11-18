@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ArtAll</title>
+    <link rel="icon" href="img/logow.png" sizes="16x16">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/38afd15758.js" crossorigin="anonymous"></script>
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>ARTALL</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Cultura para todos</p>
+                <li>
+                    <a href="descubrir.html">Descubrir</a>
+                </li>
+                <li>
+                    <a href="#">Guardados</a>
+                </li>
+                <li>
+                    <a href="#">Canjear</a>
+                </li>
+                <li>
+                    <a href="#">Balance</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Información</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Ingresar opinión</a>
+                        </li>
+                        <li>
+                            <a href="#">Preguntas frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Inicio <i class="fas fa-home"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recordatorios <i class="fas fa-calendar"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cartera <i class="fas fa-wallet"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Perfil <i class="fas fa-user"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- ==========JUMBOTRON========== >
+            <div class="container py-5">
+                <div class="jumbotron text-white jumbotron-image shadow" style="background-image: url(img/fondo2.png);">
+                    <h2 class="mb-4">Descubrir</h2>
+                    <p class="mb-4", style="color:white;">Descubre nuevas experiencias.</p>
+                </div>
+            </div -->
+
+            <!-- ==============COMPRA============ -->                                       
+                    <div class="shell" style="padding-top:20px">
+                        <div class="container">                          
+                            
+                            <!-- SHOPPING-->
+                            <div class="main">
+                              <h1>Compra tus boletos</h1>
+                              
+                              <section class="shopping-cart">
+                                <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
+
+                                  <script id="shopping-cart--list-item-template" type="text/template">
+                                    <li class="_grid shopping-cart--list-item">
+                                      <div class="_column product-image">
+                                        <img class="product-image--img" src="{{=img}}" alt="Item image" />
+                                      </div>
+                                      <div class="_column product-info">
+                                        <h4 class="product-name">{{=name}}</h4>
+                                        <p class="product-desc">{{=desc}}</p>
+                                        <div class="price product-single-price">${{=price}}</div>
+                                      </div>
+                                      <div class="_column product-modifiers" data-product-price="{{=price}}">
+                                        <div class="_grid">
+                                          <button class="_btn _column product-subtract">&minus;</button>
+                                          <div class="_column product-qty">0</div>
+                                          <button class="_btn _column product-plus">&plus;</button>
+                                        </div>
+                                        <button class="_btn entypo-trash product-remove" style="margin-top: 45px">Eliminar</button>
+                                        <div class="price product-total-price">$0.00</div>
+                                      </div>
+                                    </li>
+                                  </script>
+
+                                </ol>
+
+                                <footer class="_grid cart-totals" style="margin-left:40px">
+                                  <div class="_column subtotal" id="subtotalCtr">
+                                    <div class="cart-totals-key">Subtotal</div>
+                                    <div class="cart-totals-value">$0.00</div>
+                                  </div>
+                                  <div class="_column taxes" id="taxesCtr">
+                                    <div class="cart-totals-key">Impuestos (16%)</div>
+                                    <div class="cart-totals-value">$0.00</div>
+                                  </div>
+                                  <div class="_column total" id="totalCtr">
+                                    <div class="cart-totals-key">Total</div>
+                                    <div class="cart-totals-value">$0.00</div>
+                                  </div>
+                                  <!--div class="_column checkout">
+                                    <button class="_btn checkout-btn entypo-forward">Terminar compra</button>                                    
+                                  </div-->
+                                </footer>
+                                <div class="page-wrapper">
+                                      <a class="buy-save trigger" style="margin-left: 40px;" href="javascript:;">Finalizar compra</a>
+                                </div>
+                                    <div class="modal-wrapper">
+                                      <div class="modal">
+                                        <div class="head">
+                                          <a class="btn-close trigger" href="javascript:;"></a>
+                                        </div>
+                                        <br><br><br>
+                                        <h1>¡Tu compra se ha completado de manera exitosa!</h1>
+                                        <div class="content">
+                                        </div>
+                                      </div>
+                                    </div>
+
+                              </section>
+                            </div>
+
+                        </div>
+                    </div>
+            <!-- ==============FIN-COMPRA============ -->
+                  
+
+
+                  
+
+            
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+    <script>
+        /* jslint browser: true*/
+        /*global $*/
+        (function(){function c(a){this.t=a}function l(a,b){for(var e=b.split(".");e.length;){if(!(e[0]in a))return!1;a=a[e.shift()]}return a}function d(a,b){return a.replace(h,function(e,a,i,f,c,h,k,m){var f=l(b,f),j="",g;if(!f)return"!"==i?d(c,b):k?d(m,b):"";if(!i)return d(h,b);if("@"==i){e=b._key;a=b._val;for(g in f)f.hasOwnProperty(g)&&(b._key=g,b._val=f[g],j+=d(c,b));b._key=e;b._val=a;return j}}).replace(k,function(a,c,d){return(a=l(b,d))||0===a?"%"==c?(new Option(a)).innerHTML.replace(/"/g,"&quot;"):
+        a:""})}var h=/\{\{(([@!]?)(.+?))\}\}(([\s\S]+?)(\{\{:\1\}\}([\s\S]+?))?)\{\{\/\1\}\}/g,k=/\{\{([=%])(.+?)\}\}/g;c.prototype.render=function(a){return d(this.t,a)};window.t=c})();
+        // end of 't';
+
+        Number.prototype.to_$ = function () {
+          return "$" + parseFloat( this ).toFixed(2);
+        };
+        String.prototype.strip$ = function () {
+          return this.split("$")[1];
+        };
+
+        var app = {
+
+          shipping : 5.00,
+          products : [
+              {
+                "name" : "Adulto",
+                "price" : "200.00",
+                "desc" : "Mayor de 15 años."
+              },
+              {
+                "name" : "Adulto mayor",
+                "price" : "100.00",
+                "desc" : "Mayor de 60 años."
+              },
+              {
+                "name" : "Niño",
+                "price" : "120.00",
+                "desc" : "Menos de 15 años."
+              }              
+    ],
+
+  removeProduct: function () {
+    "use strict";
+
+    var item = $(this).closest(".shopping-cart--list-item");
+
+    item.addClass("closing");
+    window.setTimeout( function () {
+      item.remove();
+      app.updateTotals();
+    }, 500); // Timeout for css animation
+  },
+
+  addProduct: function () {
+    "use strict";
+
+    var qtyCtr = $(this).prev(".product-qty"),
+        quantity = parseInt(qtyCtr.html(), 10) + 1;
+
+    app.updateProductSubtotal(this, quantity);
+  },
+
+  subtractProduct: function () {
+    "use strict";
+
+    var qtyCtr = $(this).next(".product-qty"),
+        num = parseInt(qtyCtr.html(), 10) - 1,
+        quantity = num <= 0 ? 0 : num;
+
+    app.updateProductSubtotal(this, quantity);
+  },
+
+  updateProductSubtotal: function (context, quantity) {
+    "use strict";
+
+    var ctr = $(context).closest(".product-modifiers"),
+        productQtyCtr = ctr.find(".product-qty"),
+        productPrice = parseFloat(ctr.data("product-price")),
+        subtotalCtr = ctr.find(".product-total-price"),
+        subtotalPrice = quantity * productPrice;
+
+    productQtyCtr.html(quantity);
+    subtotalCtr.html( subtotalPrice.to_$() );
+
+    app.updateTotals();
+  },
+
+  updateTotals: function () {
+    "use strict";
+
+    var products = $(".shopping-cart--list-item"),
+        subtotal = 0,
+        shipping;
+
+    for (var i = 0; i < products.length; i += 1) {
+      subtotal += parseFloat( $(products[i]).find(".product-total-price").html().strip$() );
+    }
+
+    shipping = (subtotal > 0 && subtotal < (100 / 1.06)) ? app.shipping : 0;
+
+    $("#subtotalCtr").find(".cart-totals-value").html( subtotal.to_$() );
+    $("#taxesCtr").find(".cart-totals-value").html( (subtotal * 0.16).to_$() );
+    $("#totalCtr").find(".cart-totals-value").html( (subtotal * 1.06 + shipping).to_$() );
+    $("#shippingCtr").find(".cart-totals-value").html( shipping.to_$() );
+  },
+
+  attachEvents: function () {
+    "use strict";
+
+    $(".product-remove").on("click", app.removeProduct);
+    $(".product-plus").on("click", app.addProduct);
+    $(".product-subtract").on("click", app.subtractProduct);
+  },
+
+  setProductImages: function () {
+    "use strict";
+
+    var images = $(".product-image"),
+        ctr,
+        img;
+
+    for (var i = 0; i < images.length; i += 1) {
+      ctr = $(images[i]),
+      img = ctr.find(".product-image--img");
+
+      ctr.css("background-image", "url(" + img.attr("src") + ")");
+      img.remove();
+    }
+  },
+
+  renderTemplates: function () {
+    "use strict";
+
+    var products = app.products,
+        content = [],
+        template = new t( $("#shopping-cart--list-item-template").html() );
+
+    for (var i = 0; i < products.length; i += 1) {
+      content[i] = template.render(products[i]);
+    }
+
+    $("#shopping-cart--list").html(content.join(""));
+  }
+
+};
+
+app.renderTemplates();
+app.setProductImages();
+app.attachEvents();
+    </script>
+
+<script type="text/javascript">
+    $( document ).ready(function() {
+  $('.trigger').click(function() {
+     $('.modal-wrapper').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur');
+     return false;
+  });
+});
+</script>
+
+</body>
+
+</html>

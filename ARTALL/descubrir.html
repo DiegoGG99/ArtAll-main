@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ArtAll</title>
+    <link rel="icon" href="img/logow.png" sizes="16x16">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/38afd15758.js" crossorigin="anonymous"></script>
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>ARTALL</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Cultura para todos</p>
+                <li>
+                    <a href="descubrir.html">Descubrir</a>
+                </li>
+                <li>
+                    <a href="#">Guardados</a>
+                </li>
+                <li>
+                    <a href="#">Canjear</a>
+                </li>
+                <li>
+                    <a href="#">Balance</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Información</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Ingresar opinión</a>
+                        </li>
+                        <li>
+                            <a href="#">Preguntas frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Inicio <i class="fas fa-home"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recordatorios <i class="fas fa-calendar"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cartera <i class="fas fa-wallet"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Perfil <i class="fas fa-user"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- ==========JUMBOTRON========== -->
+            <div class="container py-5">
+                <div class="jumbotron text-white jumbotron-image shadow" style="background-image: url(img/fondo2.png);">
+                    <h2 class="mb-4">Descubrir</h2>
+                    <p class="mb-4", style="color:white;">Descubre nuevas experiencias.</p>
+                </div>
+            </div>
+
+            <!-- ==========CATÁLOGO===========-->
+
+            <div class="container py-5">
+              <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="pills-popular-tab" data-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-popular" aria-selected="true">Populares</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-museos-tab" data-toggle="pill" href="#pills-museos" role="tab" aria-controls="pills-museos" aria-selected="false" style="margin-left: 35px;">Museos</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-arte-tab" data-toggle="pill" href="#pills-arte" role="tab" aria-controls="pills-arte" aria-selected="false" style="margin-left: 35px;">Arte</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-cine-tab" data-toggle="pill" href="#pills-cine" role="tab" aria-controls="pills-cine" aria-selected="false" style="margin-left: 35px;">Cine</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-musica-tab" data-toggle="pill" href="#pills-musica" role="tab" aria-controls="pills-musica" aria-selected="false" style="margin-left: 35px;">Música</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-teatro-tab" data-toggle="pill" href="#pills-teatro" role="tab" aria-controls="pills-teatro" aria-selected="false" style="margin-left: 35px;">Teatro</a>
+                </li>
+              </ul>
+
+              <! -- ===============TAB-POPULAR=============== -->
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-popular" role="tabpanel" aria-labelledby="pills-popular-tab">
+
+                      <div class="shell">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/jazz.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Festival de Jazz Monterrey</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price"><a href="detalles.html">Detalles</a></span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/others.jpg" alt="Product" width="225" height="337.5" class="img-responsive" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Matters Speak Up</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/holly.png" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Once Upon a Time in Hollywood</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img width="225", height="337.5" src="img/lorca.png" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Teatro</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>La Casa de Bernarda de Alba</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/fes-zara.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Festival de Cine Zaragoza</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/ghana.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Dalihbibi</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/bohemia.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Bohemia Giacomo Puccini</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/pilotorojo.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Piloto Rojo</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- ============TAB-MUSEOS============= -->
+
+                  <div class="tab-pane fade" id="pills-museos" role="tabpanel" aria-labelledby="pills-museos-tab">
+                    <div class="shell">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="wsk-cp-product">
+                              <div class="wsk-cp-img">
+                                <img src="img/bellas-artes.jpg" alt="Product" class="img-responsive" width="217.5" height="154.63" />
+                              </div>
+                              <div class="wsk-cp-text" style="padding-top: 70%;">
+                                <div class="category">
+                                  <span>Museo</span>
+                                </div>
+                                <div class="title-product">
+                                  <h3>Palacio de Bellas Artes</h3>
+                                </div>
+                                <div class="description-prod">
+                                  <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="wcf-left"><span class="price">Detalles</span></div>
+                                  <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="wsk-cp-product">
+                              <div class="wsk-cp-img"><img src="img/soumaya.jpg" width="217.5" height="154.63" alt="Product" class="img-responsive" /></div>
+                              <div class="wsk-cp-text" style="padding-top: 70%;">
+                                <div class="category">
+                                  <span>Museo</span>
+                                </div>
+                                <div class="title-product">
+                                  <h3>Soumaya</h3>
+                                </div>
+                                <div class="description-prod">
+                                  <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="wcf-left"><span class="price">Detalles</span></div>
+                                  <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="wsk-cp-product">
+                              <div class="wsk-cp-img"><img src="img/jumex.jpg" width="217.5" height="154.63" /></div>
+                              <div class="wsk-cp-text" style="padding-top: 70%;">
+                                <div class="category">
+                                  <span>Museo</span>
+                                </div>
+                                <div class="title-product">
+                                  <h3>Museo Jumex</h3>
+                                </div>
+                                <div class="description-prod">
+                                  <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="wcf-left"><span class="price">Detalles</span></div>
+                                  <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="wsk-cp-product">
+                              <div class="wsk-cp-img"><img src="img/inah.jpg" width="217.5" height="154.63" /></div>
+                              <div class="wsk-cp-text" style="padding-top: 70%;">
+                                <div class="category">
+                                  <span>Museo</span>
+                                </div>
+                                <div class="title-product">
+                                  <h3>Museo de Antropología e Historia</h3>
+                                </div>
+                                <div class="description-prod">
+                                  <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="wcf-left"><span class="price">Detalles</span></div>
+                                  <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="wsk-cp-product">
+                              <div class="wsk-cp-img">
+                                <img src="img/castillo.jpg" alt="Product" class="img-responsive" width="217.5" height="154.63" />
+                              </div>
+                              <div class="wsk-cp-text" style="padding-top: 70%;">
+                                <div class="category">
+                                  <span>Museo</span>
+                                </div>
+                                <div class="title-product">
+                                  <h3>Castillo de Chapultepec</h3>
+                                </div>
+                                <div class="description-prod">
+                                  <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="wcf-left"><span class="price">Detalles</span></div>
+                                  <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="wsk-cp-product">
+                              <div class="wsk-cp-img">
+                                <img src="img/memtol.jpg" alt="Product" class="img-responsive" width="217.5" height="154.63"/>
+                              </div>
+                              <div class="wsk-cp-text" style="padding-top: 70%;">
+                                <div class="category">
+                                  <span>Museo</span>
+                                </div>
+                                <div class="title-product">
+                                  <h3>Museo Memoria y Tolerancia</h3>
+                                </div>
+                                <div class="description-prod">
+                                  <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="wcf-left"><span class="price">Detalles</span></div>
+                                  <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="wsk-cp-product">
+                              <div class="wsk-cp-img">
+                                <img src="img/muac.jpg" alt="Product" class="img-responsive" width="217.5" height="154.63"/>
+                              </div>
+                              <div class="wsk-cp-text" style="padding-top: 70%;">
+                                <div class="category">
+                                  <span>Museo</span>
+                                </div>
+                                <div class="title-product">
+                                  <h3>Museo Universitario Arte Contemporáneo</h3>
+                                </div>
+                                <div class="description-prod">
+                                  <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="wcf-left"><span class="price">Detalles</span></div>
+                                  <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="wsk-cp-product">
+                              <div class="wsk-cp-img">
+                                <img src="img/mam.jpg" alt="Product" class="img-responsive" width="217.5" height="154.63"/>
+                              </div>
+                              <div class="wsk-cp-text" style="padding-top: 70%;">
+                                <div class="category">
+                                  <span>Museo</span>
+                                </div>
+                                <div class="title-product">
+                                  <h3>Museo Arte Moderno</h3>
+                                </div>
+                                <div class="description-prod">
+                                  <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="wcf-left"><span class="price">Detalles</span></div>
+                                  <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- ==========TAB-ARTE========== -->
+
+                  <div class="tab-pane fade" id="pills-arte" role="tabpanel" aria-labelledby="pills-arte-tab">
+                    <div class="shell">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/torfs.png" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Ana Torfs</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/others.jpg" alt="Product" width="225" height="337.5" class="img-responsive" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Matters Speak Up</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/brossa.png" width="225", height="337.5"/></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Poesia Brossa</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img width="225", height="337.5" src="img/deball.png" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Mariana Deball</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/matisse.png" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Henri Matisse</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/ghana.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Dalihbibi</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/marz.png" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Leo Marz</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/pilotorojo.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Arte</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Piloto Rojo</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+                  <!-- ============TAB-CINE============ -->  
+                  <div class="tab-pane fade" id="pills-cine" role="tabpanel" aria-labelledby="pills-cine-tab">
+                    <div class="shell">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/holly.png" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Once Upon A Time In Hollywood</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/asako.jpg" alt="Product" width="225" height="337.5" class="img-responsive" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Asako I & II</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/moodlove.jpg" width="225", height="337.5"/></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>In The Mood For Love</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img width="225", height="337.5" src="img/getout.png" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Get Out</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/grass.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Grass</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/neverhere.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>You Were Never Really Here</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/joker.png" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Joker</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/drowning.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Cine</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Drowning Love</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>                
+                  </div>
+
+                  <!-- =============TAB-MUSICA========== -->
+                  <div class="tab-pane fade" id="pills-musica" role="tabpanel" aria-labelledby="pills-musica-tab">
+                    <div class="shell">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/americamartin.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>America Martin</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/jazz.jpg" alt="Product" width="225" height="337.5" class="img-responsive" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Festival de Jazz Monterrey</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/americanuni.jpg" width="225", height="337.5"/></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Orquesta Sinfónica AU</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img width="225", height="337.5" src="img/calarts.png" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>CalArts Youth Orchestra</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/celina.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Celina Kotz</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/xalapa.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Orquestra Sinfónica Xalapa</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/nygaard.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Finn Nygaard</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/maggie.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Música</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Maggie Rose</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>                
+                  </div>
+
+                  <!-- =============TAB-TEATRO=========== -->
+                  <div class="tab-pane fade" id="pills-teatro" role="tabpanel" aria-labelledby="pills-teatro-tab">
+                    <div class="shell">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/angelito.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Teatro</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Angelito</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/lorca.png" alt="Product" width="225" height="337.5" class="img-responsive" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Teatro</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>La Casa de Alba</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img src="img/macbeth.jpg" width="225", height="337.5"/></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Teatro</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Macbeth</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img"><img width="225", height="337.5" src="img/rigoletto.jpg" /></div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Teatro</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Rigoletto</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/romeoyjulieta.jpg" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Teatro</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Romeo y Julieta</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/turandot.png" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Teatro</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Turandot</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/wicked.png" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Teatro</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Wicked</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="wsk-cp-product">
+                                <div class="wsk-cp-img">
+                                  <img src="img/mama.png" alt="Product" class="img-responsive" width="225" height="337.5" />
+                                </div>
+                                <div class="wsk-cp-text">
+                                  <div class="category">
+                                    <span>Teatro</span>
+                                  </div>
+                                  <div class="title-product">
+                                    <h3>Mamma Mia</h3>
+                                  </div>
+                                  <div class="description-prod">
+                                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Detalles</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="fas fa-ticket-alt"></i></a></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>                
+                  </div>       
+          
+            <!-- ===========FIN CATÁLOGO=============-->
+
+            
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
